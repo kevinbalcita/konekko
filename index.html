@@ -71,7 +71,7 @@
             margin: 20px 0;
         }
         .payment img {
-            max-width: 80px;
+            max-width: 120px; /* Increased size for QR codes */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -81,7 +81,7 @@
         footer {
             padding: 10px;
             background-color: #00468b;
-            position: relative;
+            position: fixed; /* Ensures footer stays at bottom */
             bottom: 0;
             width: 100%;
         }
@@ -112,11 +112,11 @@
             <div class="payment">
                 <div>
                     <img src="gcash-qr.png" alt="GCash QR">
-                    <img width="50px" src="gcash.png" alt="GCash">
+                    <img src="gcash.png" alt="GCash Logo" style="margin-top: 10px; max-width: 100px;">
                 </div>
                 <div>
                     <img src="maya-qr.png" alt="Maya QR">
-                    <img width="50px" src="maya.png" alt="Maya">
+                    <img src="maya.png" alt="Maya Logo" style="margin-top: 10px; max-width: 100px;">
                 </div>
             </div>
         </div>
