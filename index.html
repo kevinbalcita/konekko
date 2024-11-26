@@ -71,7 +71,7 @@
             margin: 20px 0;
         }
         .payment img {
-            max-width: 150px; /* Increased size for QR codes */
+            max-width: 120px; /* Increased size for QR codes */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -84,6 +84,22 @@
             position: fixed; /* Ensures footer stays at bottom */
             bottom: 0;
             width: 100%;
+        }
+        .subscription {
+            text-align: left;
+        }
+        .subscription ul {
+            list-style: none;
+            padding: 0;
+        }
+        .subscription li {
+            padding: 10px;
+            background: #f4f4f4;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -104,6 +120,19 @@
                 <br>
                 <button type="submit">Connect</button>
             </form>
+        </div>
+
+        <div class="service-box">
+            <h2>Subscription Options</h2>
+            <div class="subscription">
+                <ul>
+                    <li><span>1 Hour Unli-Net</span> <span>P5</span></li>
+                    <li><span>4 Hours Unli-Net</span> <span>P10</span></li>
+                    <li><span>1 Day Unli-Net</span> <span>P25</span></li>
+                    <li><span>3 Days Unli-Net</span> <span>P55</span></li>
+                    <li><span>5 Days Unli-Net</span> <span>P85</span></li>
+                </ul>
+            </div>
         </div>
 
         <div class="service-box">
