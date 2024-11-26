@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KonekKo Hotspot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0078D4, #FFA500);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: #00468b;
+        }
+        header img {
+            max-width: 150px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .service-box {
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .service-box h2 {
+            margin-top: 0;
+        }
+        .payment {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .payment img {
+            max-width: 80px;
+            border-radius: 10px;
+        }
+        footer {
+            padding: 10px;
+            background-color: #00468b;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="KonekKo Logo">
+        <h1>Welcome to KonekKo!</h1>
+        <p>Connect. Surf. Enjoy!</p>
+    </header>
+
+    <div class="container">
+        <div class="service-box">
+            <h2>Select Your Service</h2>
+            <form>
+                <label for="voucher">Enter Voucher Code:</label><br>
+                <input type="text" id="voucher" name="voucher" required style="padding: 10px; width: 90%; margin: 10px 0;">
+                <br>
+                <button type="submit" style="padding: 10px 20px; background-color: #0078D4; color: white; border: none; border-radius: 5px;">Connect</button>
+            </form>
+        </div>
+
+        <div class="service-box">
+            <h2>Payment Options</h2>
+            <p>Pay via GCash or Maya to access the internet.</p>
+            <div class="payment">
+                <div>
+                    <img src="gcash-qr.png" alt="GCash QR">
+                    <p>GCash</p>
+                </div>
+                <div>
+                    <img src="maya-qr.png" alt="Maya QR">
+                    <p>PayMaya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 KonekKo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
