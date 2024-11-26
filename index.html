@@ -6,7 +6,7 @@
     <title>KonekKo Hotspot</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #0078D4, #FFA500);
@@ -19,6 +19,10 @@
         }
         header img {
             max-width: 150px;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 2em;
         }
         .container {
             padding: 20px;
@@ -35,29 +39,60 @@
         .service-box h2 {
             margin-top: 0;
         }
+        .service-box form {
+            text-align: left;
+        }
+        .service-box input {
+            padding: 10px;
+            width: 90%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .service-box input:focus {
+            outline: none;
+            border-color: #0078D4;
+        }
+        .service-box button {
+            padding: 10px 20px;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .service-box button:hover {
+            background-color: #005bb5;
+        }
         .payment {
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
         }
         .payment img {
-            max-width: 150px;
+            max-width: 80px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .payment div {
+            text-align: center;
         }
         footer {
             padding: 10px;
             background-color: #00468b;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="logo.png" alt="KonekKo Logo">
         <h1>Welcome to KonekKo!</h1>
-        <p>Connect. Surf. Enjoy!</p>
+        <p><strong>Connect. Surf. Enjoy!</strong></p>
     </header>
 
     <div class="container">
@@ -65,15 +100,15 @@
             <h2>Select Your Service</h2>
             <form>
                 <label for="voucher">Enter Voucher Code:</label><br>
-                <input type="text" id="voucher" name="voucher" required style="padding: 10px; width: 90%; margin: 10px 0;">
+                <input type="text" id="voucher" name="voucher" placeholder="Enter your voucher code here" required>
                 <br>
-                <button type="submit" style="padding: 10px 20px; background-color: #0078D4; color: white; border: none; border-radius: 5px;">Connect</button>
+                <button type="submit">Connect</button>
             </form>
         </div>
 
         <div class="service-box">
             <h2>Payment Options</h2>
-            <p>Pay via GCash or Maya to access the internet.</p>
+            <p>Scan the QR code below to pay and get connected.</p>
             <div class="payment">
                 <div>
                     <img src="gcash-qr.png" alt="GCash QR">
